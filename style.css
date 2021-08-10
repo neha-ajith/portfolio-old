@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/pinkbg.jpg");
+}
+
+.nav-bar{
+    background-color: black;
+    padding: 10px;
+}
+
+.ul1 {
+    text-align: center;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.ul1 li{
+    display: inline;
+    margin-left: 20px;
+}
+
+.ul2 a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    font-family: NavFont;
+}
+
+@font-face {
+    font-family: "NavFont";
+    src: url("fonts/PodkovaVFBeta.ttf");
+}
+
+@font-face {
+    font-family: "MyName";
+    src: url("fonts/BungeeInline-Regular.ttf");
+}
+
+.myname{
+    text-align: left;
+    position: relative;
+    padding: 5px;
+    color: white; 
+    font-family: MyName;
+    font-size: larger;
+}
+
+.ul2{
+    text-align: right;
+    list-style: none;
+    padding: 10px;
+}
+
+.ul2 li{
+    display: inline;
+}
+
+.ul2 a{
+    padding: 10px;
+}
+
+.ul2 img{
+    width: 30px;
+}
+
