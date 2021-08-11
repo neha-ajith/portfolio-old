@@ -39,11 +39,11 @@ nav ul li{
 nav ul li a{
     color: white;
     font-size: 17px;
+    transition: all .5s ease;
 }
 
 a.active, a:hover{
-    text-decoration: underline;
-    transition: .5s;
+    color: pink;
 }
 
 .checkbtn{
@@ -104,7 +104,7 @@ a.active, a:hover{
 
 section{
     
-    background: url("assets/bitmojicpy.jpg") no-repeat;
+    background: url("../assets/bitmojicpy.jpg") no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
     /* opacity: 0.5; */
@@ -112,10 +112,10 @@ section{
 
 @font-face {
     font-family: "NavFont";
-    src: url("fonts/PodkovaVFBeta.ttf");
+    src: url("../fonts/PodkovaVFBeta.ttf");
 }
 
 @font-face {
     font-family: "MyName";
-    src: url("fonts/BungeeInline-Regular.ttf");
+    src: url("../fonts/BungeeInline-Regular.ttf");
 }
