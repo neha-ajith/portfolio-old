@@ -14,7 +14,7 @@
 
 header{
     background: black;
-    height: 500px;
+    height: 70px;
 }
 
 .container{
@@ -44,6 +44,18 @@ header nav .left a:hover{
     color: pink;
 }
 
+.hero{
+    background: url("../assets/bitmojicpy.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 70px);
+}
+
+.hero h1{
+    font-size: 170px;
+    font-family: 'Reenie Beanie';
+    margin-left: 20rem;
+    font-weight: 550;
+}
 
 
 .checkbtn{
@@ -102,13 +114,7 @@ header nav .left a:hover{
     }
 }
 
-section{
-    
-    background: url("../assets/bitmojicpy.jpg") no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-    /* opacity: 0.5; */
-}
+
 
 @font-face {
     font-family: "NavFont";
