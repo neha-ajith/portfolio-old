@@ -1,50 +1,62 @@
+@import 'utilities.css';
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
 
-body{
-    color: black;
+.right a img{
+    height: 35px;
+    padding: 5px;
 }
 
-nav{
+header{
     background: black;
-    height: 80px;
-    width: 100%;
+    height: 70px;
 }
 
-label.logo{
+.container{
+    max-width: calc(100vw - 20px);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a{
     color: white;
-    font-size: 25px;
-    line-height: 80px;
-    padding: 0 20px;
-    font-family: MyName;
-}
-
-nav ul{
-    float: right;
-    margin-right: 350px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 120px;
-    margin: 0 45px;
-    font-family: NavFont;
-}
-
-nav ul li a{
-    color: white;
-    font-size: 17px;
+    font-family: NavFont,sans-serif;
+    margin-right: 5rem;
     transition: all .5s ease;
 }
 
-a.active, a:hover{
+header nav .left .logo h1{
+    color: white;
+    font-family: MyName;
+    font-size: 25px;
+}
+
+header nav .logo{
+    margin-right: 17rem;
+}
+
+header nav .left a:hover{
     color: pink;
 }
+
+.hero{
+    background: url("../assets/bitmojicpy.jpg") no-repeat;
+    background-size: cover;
+    height: calc(100vh - 70px);
+}
+
+.hero h1{
+    font-size: 170px;
+    font-family: 'Reenie Beanie';
+    margin-left: 20rem;
+    font-weight: 550;
+}
+
 
 .checkbtn{
     color: red;
@@ -102,13 +114,7 @@ a.active, a:hover{
     }
 }
 
-section{
-    
-    background: url("../assets/bitmojicpy.jpg") no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-    /* opacity: 0.5; */
-}
+
 
 @font-face {
     font-family: "NavFont";
