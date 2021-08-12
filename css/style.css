@@ -125,6 +125,10 @@ section p{
   color: black;
 }
 
+.projects{
+  padding: 12rem 32rem;
+}
+
 @font-face {
   font-family: "NavFont";
   src: url("../fonts/PodkovaVFBeta.ttf");
