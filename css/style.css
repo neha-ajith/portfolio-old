@@ -69,13 +69,13 @@ section{
 }
 
 .who{
-  margin-left: 7rem;
+  margin-left: 3rem;
 }
 
 .who .top{
   text-align: center;
   margin-bottom: 2rem;
-  max-width: 1050px;
+  /* max-width: 1050px; */
 }
 
 section p{
@@ -127,6 +127,16 @@ section p{
 
 .projects{
   padding: 12rem 32rem;
+}
+
+section.what .container{
+  display: flex;
+  flex-direction: column;
+}
+
+section.who .container{
+  display: flex;
+  /* flex-direction: column; */
 }
 
 @font-face {
