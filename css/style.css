@@ -5,6 +5,7 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: 'Public Sans';
 }
 
 body{
@@ -52,9 +53,7 @@ header nav .left a:hover {
 }
 
 .hero {
-  /* background: url("../assets/bitmojicpy.jpg") no-repeat;
-  background-size: cover; */
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
 }
 
 .hero h1 {
@@ -64,65 +63,66 @@ header nav .left a:hover {
   font-weight: 550;
 }
 
-/* .who{
-    background: url("../assets/bitmojicpy.jpg") no-repeat;
-  background-size: cover;
+section{
   height: calc(100vh - 70px);
-} */
-
-.checkbtn {
-  color: red;
-  float: right;
-  line-height: 95px;
-  margin-right: 40px;
-  display: none;
+  padding: 5rem 0;
 }
 
-.menu {
-  width: 30px;
+.who{
+  margin-left: 7rem;
 }
 
-#check {
-  display: none;
+.who .top{
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 1050px;
 }
 
-@media (max-width: 952px) {
-  label.logo {
-    font-size: 30px;
-    padding-left: 20px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
-    /* color: black; */
-  }
+section p{
+  font-size: 2rem;
 }
 
-@media (max-width: 858px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
+.ed{
+  margin: 2rem;
+}
+
+.ed h4{
+  font-family: 'PT Sans Narrow';
+}
+
+.bottom .head{
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.what{
+  padding: 8rem 0;
+}
+
+.desc{
+  margin-left: 7rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 1050px;
+}
+
+.btn{
+  text-align: center;
+  margin-left: -3rem;
+}
+
+.btn a{
+  background-color: black;
+  padding: 1rem 3rem;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  transition: all .5s ease;
+}
+
+.btn a:hover{
+  background-color: #FBAAAA;
+  color: black;
 }
 
 @font-face {
