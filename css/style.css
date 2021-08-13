@@ -15,11 +15,6 @@ body {
   background-attachment: fixed;
 }
 
-.right a img {
-  height: 35px;
-  padding: 5px;
-}
-
 header {
   background: black;
   height: 70px;
@@ -31,7 +26,7 @@ header {
   margin: 0 auto;
 }
 
-header nav .left a {
+header nav a {
   color: white;
   font-family: NavFont, sans-serif;
   margin-right: 5rem;
@@ -48,8 +43,8 @@ header nav .logo {
   margin-right: 17rem;
 }
 
-header nav .left a:hover {
-  color: pink;
+header nav a:hover {
+  color:#fbaaaa;
 }
 
 .hero {
