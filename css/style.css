@@ -5,14 +5,14 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: 'Public Sans';
+  font-family: "Public Sans";
 }
 
-body{
-    background-image: url("../assets/bitmojicpy.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: url("../assets/bitmojicpy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .right a img {
@@ -63,80 +63,107 @@ header nav .left a:hover {
   font-weight: 550;
 }
 
-section{
+section {
   height: calc(100vh - 70px);
   padding: 5rem 0;
 }
 
-.who{
+.who {
   margin-left: 3rem;
 }
 
-.who .top{
+.who .top {
   text-align: center;
   margin-bottom: 2rem;
   /* max-width: 1050px; */
 }
 
-section p{
+section p {
   font-size: 2rem;
 }
 
-.ed{
-  margin: 2rem;
+.ed {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.7s ease;
+  cursor: pointer;
 }
 
-.ed h4{
-  font-family: 'PT Sans Narrow';
+.ed h4 {
+  font-family: "PT Sans Narrow";
 }
 
-.bottom .head{
-  margin: 2rem;
+.ed .hide {
+  display: none;
+}
+
+.ed:hover {
+  background: black;
+  border-radius: 1rem;
+}
+
+.ed:hover .no-hide {
+  display: flex;
+  color: #fbaaaa;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.ed:hover .hide {
+  display: flex;
+  flex-direction: column;
+  color: #fbaaaa;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.bottom .head {
+  margin: 1rem;
   font-size: 2rem;
 }
 
-.what{
+.what {
   padding: 8rem 0;
 }
 
-.desc{
+.desc {
   margin-left: 7rem;
   text-align: center;
   margin-bottom: 2rem;
   max-width: 1050px;
 }
 
-.btn{
+.btn {
   text-align: center;
   margin-left: -3rem;
 }
 
-.btn a{
+.btn a {
   background-color: black;
   padding: 1rem 3rem;
   border-radius: 6px;
   color: white;
   font-size: 1rem;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.btn a:hover{
-  background-color: #FBAAAA;
+.btn a:hover {
+  background-color: #fbaaaa;
   color: black;
 }
 
-.projects{
+.projects {
   padding: 12rem 32rem;
 }
 
-section.what .container{
+section.what .container {
   display: flex;
   flex-direction: column;
 }
 
-section.who .container{
+section.who .container {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 @font-face {
