@@ -179,9 +179,10 @@ section.what{
   text-align: center;
   padding: 4rem;
   margin: 4rem;
+  display: flex;
 }
 
-section.what .desc {
+section.what .top {
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -266,7 +267,7 @@ section.contact textarea:focus {
   outline: none;
 }
 
-section.contact button {
+button {
   background-color: black;
   padding: 1rem 3rem;
   border-radius: 6px;
@@ -277,7 +278,7 @@ section.contact button {
   cursor: pointer;
 }
 
-section.contact button:hover {
+button:hover {
   background-color: #fbaaaa;
   color: black;
 }
@@ -399,7 +400,17 @@ footer h2 {
     padding: 1rem 1rem;
     margin-left: -2rem;
   }
-  section.what .btn a{
-    margin-left: 2rem;
+  section.what .btn {
+    margin-left: 0;
+  }
+  section.what{
+    margin: 0;
+    padding: 0;
+  }
+  section.what .top{
+    margin-bottom: 0;
+  }
+  section.what .top p{
+    font-size: 1.5rem;
   }
 }
