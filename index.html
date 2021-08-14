@@ -35,88 +35,106 @@
             </div>
             <div>
               <a href="#">INTRO</a>
-              <a href="#">WHO</a>
-              <a href="#">WHAT</a>
-              <a href="#">PROJECTS</a>
+              <a href="#who">WHO</a>
+              <a href="#what">WHAT</a>
+              <!-- <a href="#projects">PROJECTS</a> -->
             </div>
           </div>
           <div class="right">
-            <a href="#">CONTACT</a>
+            <a href="#contact">CONTACT</a>
           </div>
         </nav>
       </div>
     </header>
-    <div class="hero flex items-center">
+    <section class="hero items-center">
       <h1>
         Bonjour! <br />
         Neha here :)
       </h1>
-    </div>
-    <section class="who">
-      <div class="container items-center">
-        <div class="top">
-          <p>
-            I'm a second year CSE student, studying at Rajiv Gandhi Institute of
-            Technology, Kottayam.
-          </p>
+    </section>
+    <section id="who" class="who items-center flex">
+      <div class="top">
+        <p>
+          I'm a second year CSE student, studying at Rajiv Gandhi Institute of
+          Technology, Kottayam.
+        </p>
+      </div>
+      <div class="bottom">
+        <h2 class="head">Education</h2>
+        <div class="ed">
+          <div class="no-hide">
+            <h4>Bachelor of Technology - CSE(present)</h4>
+            <h2>Rajiv Gandhi Institute of Technology, Kottayam</h2>
+          </div>
+          <div class="hide">
+            <h4>2019 - 2023</h4>
+            <h4>CGPA: 8.4</h4>
+          </div>
         </div>
-        <div class="bottom">
-          <h2 class="head">Education</h2>
-          <div class="ed">
-            <div class="no-hide">
-              <h4>Bachelor of Technology - CSE(present)</h4>
-              <h2>Rajiv Gandhi Institute of Technology, Kottayam</h2>
-            </div>
-            <div class="hide">
-              <h4>2019 - 2023</h4>
-              <h4>CGPA: 8.4</h4>
-            </div>
+        <div class="ed">
+          <div class="no-hide">
+            <h4>Higher Secondary Education</h4>
+            <h2>Govt. HSS For Girls, Cottonhill, Thiruvananthapuram</h2>
           </div>
-          <div class="ed">
-            <div class="no-hide">
-              <h4>Higher Secondary Education</h4>
-              <h2>Govt. HSS For Girls, Cottonhill, Thiruvananthapuram</h2>
-            </div>
-            <div class="hide">
-              <h4>2017 - 2019</h4>
-            </div>
+          <div class="hide">
+            <h4>2017 - 2019</h4>
           </div>
-          <div class="ed">
-            <div class="no-hide">
-              <h4>High School</h4>
-              <h2>Kairali Vidya Bhavan, Nedumangad, Thiruvananthapuram</h2>
-            </div>
-            <div class="hide">
-              <h4>2006 - 2017</h4>
-            </div>
+        </div>
+        <div class="ed">
+          <div class="no-hide">
+            <h4>High School</h4>
+            <h2>Kairali Vidya Bhavan, Nedumangad, Thiruvananthapuram</h2>
+          </div>
+          <div class="hide">
+            <h4>2006 - 2017</h4>
           </div>
         </div>
       </div>
     </section>
-    <section class="what items-center justify-between">
-      <div class="container">
-        <div class="desc">
-          <p>
-            I’m a student developer(thanks to Youtube, Google and StackOverflow
-            :P) and a professional overthinker. I love making cool apps using
-            Flutter and simple websites. I am an occasional writer too.
-          </p>
-        </div>
-        <div class="btn">
-          <a href="#">My Resume</a>
-        </div>
+    <section id="what" class="what flex">
+      <div class="desc">
+        <p>
+          I’m a student developer(thanks to Youtube, Google and StackOverflow
+          :P) and a professional overthinker. I love making cool apps using
+          Flutter and designing simple websites. I am an occasional writer too.
+        </p>
+      </div>
+      <div class="btn">
+        <a href="#">My Resume</a>
       </div>
     </section>
-    <section class="projects items-center justify-between">
-      <p>Coming soon...</p>
-    </section>
-    <section class="contact">
+    <!-- <section id="projects" class="projects">
+        <h1>Coming soon...</h1>
+    </section> -->
+    <section id="contact" class="contact flex items-center">
       <h2>Drop a line! ^ _ ^</h2>
+      <form action="">
+        <div class="input-wrap">
+          <input type="text" size="40" placeholder="Your Name" />
+          <input type="email" placeholder="Your email" />
+        </div>
+        <div class="text-area-wrap">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <div class="button">
+          <button class="btn">Send Message</button>
+        </div>
+      </form>
     </section>
-    <!-- <footer>
-      <a href="#"><img src="assets/instagram.png" /></a>
-      <a href="#"><img src="assets/linkedin.png" /></a>
-      <a href="#"><img src="assets/github.png" /></a>
-    </footer> -->
+    <footer>
+      <h3>Designed and developed by</h3>
+      <h2>Neha Ajith</h2>
+      <div class="socials">
+        <a href="#"><img src="assets/instagram.png" /></a>
+        <a href="#"><img src="assets/linkedin.png" /></a>
+        <a href="#"><img src="assets/github.png" /></a>
+      </div>
+    </footer>
   </body>
 </html>

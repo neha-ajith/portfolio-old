@@ -1,5 +1,19 @@
 @import "utilities.css";
 
+@font-face {
+  font-family: "NavFont";
+  src: url("../fonts/PodkovaVFBeta.ttf");
+}
+
+@font-face {
+  font-family: "MyName";
+  src: url("../fonts/BungeeInline-Regular.ttf");
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,33 +58,30 @@ header nav .logo {
 }
 
 header nav a:hover {
-  color:#fbaaaa;
+  color: #fbaaaa;
 }
 
-.hero {
-  height: calc(100vh - 60px);
+section {
+  height: calc(100vh - 70px);
+  margin-top: 5rem;
+  padding-top: 4rem;
 }
 
 .hero h1 {
   font-size: 170px;
   font-family: "Reenie Beanie";
-  margin-left: 20rem;
   font-weight: 550;
+  text-align: center;
 }
 
-section {
-  height: calc(100vh - 70px);
-  padding: 5rem 0;
-}
-
-.who {
+section.who {
   margin-left: 3rem;
+  flex-direction: column;
 }
 
 .who .top {
   text-align: center;
   margin-bottom: 2rem;
-  /* max-width: 1050px; */
 }
 
 section p {
@@ -114,59 +125,132 @@ section p {
 
 .bottom .head {
   margin: 1rem;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
-.what {
-  padding: 8rem 0;
-}
-
-.desc {
-  margin-left: 7rem;
+section.what{
+  flex-direction: column;
   text-align: center;
+}
+
+section.what .desc {
+  padding: 1rem;
   margin-bottom: 2rem;
-  max-width: 1050px;
 }
 
-.btn {
-  text-align: center;
+section.what .btn {
   margin-left: -3rem;
 }
 
-.btn a {
+section.what .btn a {
   background-color: black;
   padding: 1rem 3rem;
   border-radius: 6px;
-  color: white;
+  color: #fbaaaa;
   font-size: 1rem;
   transition: all 0.5s ease;
 }
 
-.btn a:hover {
+section.what .btn a:hover {
   background-color: #fbaaaa;
   color: black;
 }
 
-.projects {
-  padding: 12rem 32rem;
-}
-
-section.what .container {
-  display: flex;
-  flex-direction: column;
-}
+/* section.projects{
+  text-align: center;
+  padding: 1rem;
+} */
 
 section.who .container {
   display: flex;
   flex-direction: column;
 }
 
-@font-face {
-  font-family: "NavFont";
-  src: url("../fonts/PodkovaVFBeta.ttf");
+section.contact {
+  flex-direction: column;
+  padding: 1rem;
 }
 
-@font-face {
-  font-family: "MyName";
-  src: url("../fonts/BungeeInline-Regular.ttf");
+section.contact .input-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+section.contact input {
+  padding: 1rem;
+  border-radius: 6px;
+  border: gray;
+  background-color: black;
+  color: #fbaaaa;
+}
+
+section.contact textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  border: gray;
+  background-color: black;
+  color: #fbaaaa;
+}
+
+::placeholder {
+  color: #fbaaaa;
+  opacity: 1;
+}
+
+section.contact input:focus {
+  outline: none;
+}
+
+section.contact .button {
+  text-align: center;
+  margin-left: 2rem;
+}
+
+section.contact textarea:focus {
+  outline: none;
+}
+
+button {
+  background-color: black;
+  padding: 1rem 3rem;
+  border-radius: 6px;
+  color: #fbaaaa;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fbaaaa;
+  color: black;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .socials {
+  margin: 1rem;
+  margin-left: 2rem;
+}
+
+footer .socials a {
+  margin-right: 1rem;
+}
+
+footer .socials a img {
+  height: 30px;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
 }
