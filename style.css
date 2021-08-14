@@ -1,5 +1,3 @@
-@import "utilities.css";
-
 @font-face {
   font-family: "NavFont";
   src: url("../fonts/PodkovaVFBeta.ttf");
@@ -175,10 +173,12 @@ section.what .btn a:hover {
   color: black;
 }
 
+/* you aren't supposed to delete this, you may need this later */
 /* section.projects{
   text-align: center;
   padding: 1rem;
 } */
+/* ok bye */
 
 section.who .container {
   display: flex;
@@ -234,7 +234,7 @@ section.contact textarea:focus {
   outline: none;
 }
 
-button {
+section.contact button {
   background-color: black;
   padding: 1rem 3rem;
   border-radius: 6px;
@@ -245,7 +245,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+section.contact button:hover {
   background-color: #fbaaaa;
   color: black;
 }
@@ -272,4 +272,75 @@ footer .socials a img {
 
 footer h2 {
   margin-bottom: 1rem;
+}
+
+@media (max-width:1014px){
+  header{
+    display: none;
+  }
+}
+
+.main-wrapper{
+  position: relative;
+}
+
+.hamburger{
+  position: absolute;
+  top: -50px;
+  right: 40px;
+  background: none;
+  border: none;
+  z-index: 11;
+  outline: none;
+  cursor: pointer;
+}
+
+.hamburger img{
+  width: 30px;
+}
+
+.mobile-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background: black;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  transform: translateX(-100%);
+  transition: all .5s ease-in-out;
+}
+
+.open{
+  transform: translateX(0);
+}
+
+.mobile-nav ul li{
+  padding: 1rem;
+}
+
+.mobile-nav ul li a{
+  color: white;
+  font-family: NavFont, sans-serif;
+}
+
+.mobile-nav h1{
+  color: white;
+  font-family: MyName;
+}
+
+.times{
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  background: none;
+  border: none;
+  /* z-index: 11; */
+  outline: none;
+  cursor: pointer;
+}
+
+.times img{
+  width: 20px;
 }
