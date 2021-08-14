@@ -8,8 +8,33 @@
   src: url("../fonts/BungeeInline-Regular.ttf");
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
 .flex{
   display: flex;
+  flex-direction: column;
 }
 
 .items-center{
@@ -22,6 +47,10 @@
 
 html{
   scroll-behavior: smooth;
+}
+
+header .flex{
+  flex-direction: row;
 }
 
 * {
@@ -44,10 +73,10 @@ header {
   height: 70px;
 }
 
-.container {
-  max-width: calc(100vw - 20px);
-  padding: 0 15px;
-  margin: 0 auto;
+.container{
+  max-width:1152px;
+  padding:0 15px;
+  margin:0 auto;
 }
 
 header{
@@ -78,25 +107,21 @@ header nav a:hover {
   color: #fbaaaa;
 }
 
-section {
-  height: calc(100vh - 70px);
-  margin-top: 5rem;
-  padding-top: 4rem;
-}
-
 .hero h1 {
   font-size: 170px;
   font-family: "Reenie Beanie";
   font-weight: 550;
   text-align: center;
+  padding-top: 5rem;
 }
 
 section.who {
-  margin-left: 3rem;
   flex-direction: column;
+  padding: 2rem;
+  margin: 2rem;
 }
 
-.who .top {
+section.who .top {
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -146,7 +171,6 @@ section p {
 }
 
 section.what{
-  flex-direction: column;
   text-align: center;
 }
 
@@ -187,7 +211,8 @@ section.who .container {
 
 section.contact {
   flex-direction: column;
-  padding: 1rem;
+  padding: 3rem;
+  margin: 3rem;
 }
 
 section.contact .input-wrap {
@@ -274,12 +299,6 @@ footer h2 {
   margin-bottom: 1rem;
 }
 
-@media (max-width:1014px){
-  header{
-    display: none;
-  }
-}
-
 .main-wrapper{
   position: relative;
 }
@@ -343,4 +362,19 @@ footer h2 {
 
 .times img{
   width: 20px;
+}
+
+@media (max-width:1024px){
+  header{
+    display: none;
+  }
+}
+
+@media (max-width:576px){
+  .hero h1{
+    font-size: 119px;
+  }
+  section.who p{
+    padding: 1rem;
+  }
 }
