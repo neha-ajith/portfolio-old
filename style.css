@@ -32,6 +32,11 @@
   }
 }
 
+section.intro{
+  padding: 2rem;
+  margin: 2rem;
+}
+
 .flex{
   display: flex;
   flex-direction: column;
@@ -117,8 +122,8 @@ header nav a:hover {
 
 section.who {
   flex-direction: column;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 3rem;
+  margin: 3rem;
 }
 
 section.who .top {
@@ -172,6 +177,8 @@ section p {
 
 section.what{
   text-align: center;
+  padding: 4rem;
+  margin: 4rem;
 }
 
 section.what .desc {
@@ -252,7 +259,7 @@ section.contact input:focus {
 
 section.contact .button {
   text-align: center;
-  margin-left: 2rem;
+  /* margin-left: 1rem; */
 }
 
 section.contact textarea:focus {
@@ -305,13 +312,14 @@ footer h2 {
 
 .hamburger{
   position: absolute;
-  top: -50px;
+  top: 20px;
   right: 40px;
   background: none;
   border: none;
   z-index: 11;
   outline: none;
   cursor: pointer;
+  display: none;
 }
 
 .hamburger img{
@@ -368,13 +376,30 @@ footer h2 {
   header{
     display: none;
   }
+  .hamburger{
+    display: block;
+  }
 }
 
 @media (max-width:576px){
   .hero h1{
-    font-size: 119px;
+    font-size: 109px;
   }
+
+  /* section.what p{
+    padding: 1rem;
+  } */
   section.who p{
     padding: 1rem;
+  }
+  section.contact .input-wrap{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  section.contact button{
+    padding: 1rem 1rem;
+    margin-left: -2rem;
+  }
+  section.what .btn a{
+    margin-left: 2rem;
   }
 }
