@@ -1,11 +1,11 @@
 @font-face {
   font-family: "NavFont";
-  src: url("../fonts/PodkovaVFBeta.ttf");
+  src: url("fonts/PodkovaVFBeta.ttf");
 }
 
 @font-face {
   font-family: "MyName";
-  src: url("../fonts/BungeeInline-Regular.ttf");
+  src: url("fonts/BungeeInline-Regular.ttf");
 }
 
 @media (min-width: 576px) {
@@ -67,7 +67,7 @@ header .flex{
 }
 
 body {
-  background-image: url("../assets/bitmojicpy.jpg");
+  background-image: url("assets/bitmojicpy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -383,6 +383,12 @@ footer h2 {
 }
 
 @media (max-width:576px){
+  body {
+    background-image: url("assets/phonebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .hero h1{
     font-size: 109px;
   }
