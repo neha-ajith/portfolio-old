@@ -52,6 +52,13 @@ header {
   margin: 0 auto;
 }
 
+header{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
 header nav a {
   color: white;
   font-family: NavFont, sans-serif;
