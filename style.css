@@ -313,7 +313,7 @@ footer h2 {
 
 .hamburger{
   position: absolute;
-  top: 20px;
+  top: -31px;
   right: 40px;
   background: none;
   border: none;
@@ -361,7 +361,7 @@ footer h2 {
 .times{
   position: fixed;
   top: 30px;
-  right: 40px;
+  right: 0;
   background: none;
   border: none;
   /* z-index: 11; */
@@ -404,7 +404,7 @@ footer h2 {
   }
   section.contact button{
     padding: 1rem 1rem;
-    margin-left: -2rem;
+    margin-left: -1rem;
   }
   section.what .btn {
     margin-left: 0;
