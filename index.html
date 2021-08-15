@@ -30,7 +30,6 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
       type="text/javascript"
     ></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>  
     <script
       language="JavaScript"
       type="text/javascript"
@@ -150,7 +149,12 @@
             </p>
           </div>
           <div class="button">
-            <button onClick="javascript:window.open('http://www.facebook.com', '_blank');" class="btn">My Resume</button>
+            <button
+              onClick="javascript:window.open('http://www.facebook.com', '_blank');"
+              class="btn"
+            >
+              My Resume
+            </button>
           </div>
         </div>
       </section>
@@ -164,11 +168,20 @@
       <section id="contact" class="contact">
         <div class="container flex items-center">
           <h2>Drop a line!</h2>
-          <form action="">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="apikey" value="e9ff28f7-f8c2-4f03-8f41-3f3f5bf8d096">
             <div class="container form-wrapper">
               <div class="input-wrap">
-                <input id="mail-sender-name" type="text" placeholder="Your Name" />
-                <input id="mail-sender-mail" type="email" placeholder="Your email" />
+                <input
+                  id="mail-sender-name"
+                  type="text"
+                  placeholder="Your Name"
+                />
+                <input
+                  id="mail-sender-mail"
+                  type="email"
+                  placeholder="Your email"
+                />
               </div>
               <div class="text-area-wrap">
                 <textarea
@@ -179,8 +192,9 @@
                   placeholder="Your message"
                 ></textarea>
               </div>
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
               <div class="button">
-                <button onclick="sendEmail()" class="btn">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
               </div>
             </div>
           </form>
